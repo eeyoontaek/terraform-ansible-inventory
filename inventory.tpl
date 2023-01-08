@@ -2,7 +2,7 @@
 [${group}]
 
 %{ for server in servers ~}
-${name} ansible_ssh_host=${ansible_ssh_host} private_ip=${private_ip}
+${server.name} ansible_ssh_host=${server.ansible_ssh_host} private_ip=${server.private_ip}
 
 %{ endfor ~}
 
