@@ -18,8 +18,3 @@ variable "hostname" {
   type = string
   default = "ec2-user"
 }
-
-variable "output" {
-  type = string
-  default = ""
-}
