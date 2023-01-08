@@ -15,6 +15,11 @@ variable "groups" {
 }
 
 variable "hostname" {
-  type = string
-  default = "ec2-user"
+    type = string
+    default = "ec2-user"
+}
+
+variable "key_path" {
+    type = string
+    default = ""
 }
