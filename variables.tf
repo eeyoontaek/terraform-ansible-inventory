@@ -3,9 +3,10 @@ variable "servers" {
     name = string
     ansible_ssh_host = string
     private_ip = string
+    private_dns = string
   }))
   default = []
-  description = "name + public IP + private IP"
+  description = "name + public IP + private IP + private DNS"
 }
 
 variable "groups" {
