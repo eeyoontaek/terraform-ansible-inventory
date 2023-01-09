@@ -15,4 +15,6 @@ ansible_ssh_private_key_file=${key_path}
 %{ for server in servers ~}
 es_host=${server.private_ip}
 %{ endfor ~}
-private_dns=${private_dns}
+%{ for server in servers ~}
+private_dns=${server.private_dns}
+%{ endfor ~}

@@ -24,7 +24,3 @@ variable "key_path" {
     type = string
     default = ""
 }
-variable "private_dns" {
-    type = string
-    default = ""
-}
