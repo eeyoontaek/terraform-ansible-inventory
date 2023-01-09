@@ -12,6 +12,6 @@ ansible_python_interpreter=/usr/bin/python2
 [all:vars]
 ansible_user=${hostname}
 ansible_ssh_private_key_file=${key_path}
-%{ for idx, server in servers ~}
-es_host_${idx}=server.private_ip
+%{ for server in servers ~}
+es_host=${server.private_ip}
 %{ endfor ~}
