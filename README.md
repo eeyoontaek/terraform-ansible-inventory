@@ -7,13 +7,13 @@ module "inventory" {
   servers = [         # 필요한 서버 정보 / list(object)
     {
         "name" : "amazon1",
-        "ansible_ssh_host" : aws_instance.da_platform_by_ami2.public_ip,
-        "private_ip" : aws_instance.da_platform_by_ami2.private_ip,
-        "private_dns" : aws_instance.da_platform_by_ami2.private_dns
+        "ansible_ssh_host" : aws_instance.da_platform_by_ami2.public_ip,  # 해당 서버의 public IP
+        "private_ip" : aws_instance.da_platform_by_ami2.private_ip,       # 해당 서버의 private IP
+        "private_dns" : aws_instance.da_platform_by_ami2.private_dns      # 해당 서버 DNS
     }
   ]
   hostname = "ec2-user"   # 호스트
-  key_path = "/Users/eeyoontaek/desktop/da-bastion.pem"   # 키 경로
+  key_path = "<path to key>"   # 키 경로
   depends_on = [
     aws_instance.da_platform_by_ami2
 }
