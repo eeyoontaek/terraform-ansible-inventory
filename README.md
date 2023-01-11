@@ -16,5 +16,7 @@ module "inventory" {
   key_path = "<path to key>"   # 키 경로
   depends_on = [
     aws_instance.da_platform_by_ami2
+  ]
 }
+
 ```
