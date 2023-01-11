@@ -34,6 +34,6 @@ ansible_python_interpreter=/usr/bin/python2
 [all:vars]
 ansible_user=입력한 Hostname
 ansible_ssh_private_key_file=입력한 key path
-es_host=172.21.11.152
+es_host=private IP와 동일
 private_dns=생성한 서버의 dns
 ```
